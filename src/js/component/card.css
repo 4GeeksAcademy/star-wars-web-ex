@@ -1,0 +1,91 @@
+
+.cover{
+  
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  width: 100%;
+  height: 400px;
+  padding: 1rem;
+  
+ 
+  -webkit-overflow-scrolling: touch;
+}
+.container-fluid{
+  
+  padding-left: 2%;
+  padding-right: 2%;
+ 
+}
+
+.card{
+  width: 200px;
+  height: 290px;
+  
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex: 0 0 auto;
+  position: relative;
+  background-image: url('https://i.pinimg.com/736x/7f/ee/89/7fee89a8b13f2a7a17d36af55a847883.jpg');
+  background-size: cover;
+  
+   
+}
+.card img {
+  width: 100%;
+  height:250px;
+  object-fit: cover;
+}
+.mainBody{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-R4fxt49_dnv0ye5sP5CRmki6Z2BAwQJgw&s');
+  background-size: cover;
+  
+
+}
+.body{
+  background-color: black;
+}
+.card1{
+  width: 300px;
+  height: 290px;
+  
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex: 0 0 auto;
+  position: relative;
+  background-image: url('https://i.pinimg.com/736x/7f/ee/89/7fee89a8b13f2a7a17d36af55a847883.jpg');
+  background-size: cover;
+  
+   
+}
+.card2{
+  width: 200px;
+  height: 290px;
+  
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex: 0 0 auto;
+  position: relative;
+  background-image: url('https://i.pinimg.com/736x/7f/ee/89/7fee89a8b13f2a7a17d36af55a847883.jpg');
+  background-size: cover;
+  
+   
+}
+.card1 img {
+  width: 100%;
+  height:250px;
+  object-fit: cover;
+}
+.card2 img {
+  width: 100%;
+  height:250px;
+  object-fit: cover;
+}
