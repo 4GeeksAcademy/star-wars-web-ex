@@ -15,7 +15,7 @@ const PlanetsDetails = () => {
   }, []);
 
   return (
-    <div>
+    <div className='container-fluid'>
       <div>
         <img
           src={`https://starwars-visualguide.com/assets/img/planets/${params.uid}.jpg`}
@@ -24,6 +24,12 @@ const PlanetsDetails = () => {
       </div>
       <div>
         <h1>name : {store.planet?.terrain}</h1>
+        <p>climate : {store.planet?.climate}</p>
+        <p>population : {store.planet?.population}</p>
+        <p>rotation_period : {store.planet?.rotation_period}</p>
+        <p>orbital_period : {store.planet?.orbital_period}</p>
+        <p>diameter : {store.planet?.diameter}</p>
+
       </div>
 
       <button className="btn btn-dark " onClick={() => navigate("/")}>

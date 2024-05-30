@@ -17,7 +17,7 @@ const CharacterDefault = () => {
 return (
  
   
-    <div>
+    <div className='container-fluid'>
     <div>
     <img src={`https://starwars-visualguide.com/assets/img/characters/${params.uid}.jpg`}
            alt={name}/>
@@ -26,6 +26,10 @@ return (
        <p> gender : {store.character?.gender} </p>
        <p> eye_color : {store.character?.eye_color} </p>
        <p> hair_color : {store.character?.hair_color} </p>
+        <p> height : {store.character?.height} </p>
+        <p> mass : {store.character?.mass} </p>
+        
+        
       
      
   <button className='btn btn-dark ' onClick={()=>navigate('/')

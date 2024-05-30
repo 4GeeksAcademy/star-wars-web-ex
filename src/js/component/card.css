@@ -1,91 +1,99 @@
 
-.cover{
+.container-fluid {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.card {
+  width: 200px;
+  height: 290px;
+
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto;
   
+  background-color: black;
+}
+
+.mainBody {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-R4fxt49_dnv0ye5sP5CRmki6Z2BAwQJgw&s");
+  background-size: cover;
+}
+
+.btn-primary * {
+  text-decoration: none;
+
+  color: white;
+}
+.btn {
+  margin: 5px;
+  margin-top: 5%;
+}
+.card img {
+  width: 100%;
+  height: 100%; /* Change this from 250px to 100% */
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* This will change the scrollbar's width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* This will change the scrollbar's background color */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* This will change the scrollbar's thumb color */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* This will change the scrollbar's thumb color when you hover over it */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+#item , #item1, #item2{
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  width: 100%;
-  height: 400px;
+
   padding: 1rem;
-  
- 
+
   -webkit-overflow-scrolling: touch;
-}
-.container-fluid{
-  
-  padding-left: 2%;
-  padding-right: 2%;
  
 }
-
-.card{
-  width: 200px;
-  height: 290px;
-  
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  flex: 0 0 auto;
-  position: relative;
-  background-image: url('https://i.pinimg.com/736x/7f/ee/89/7fee89a8b13f2a7a17d36af55a847883.jpg');
-  background-size: cover;
-  
-   
-}
-.card img {
+#item {
+  height: 470px;
   width: 100%;
-  height:250px;
-  object-fit: cover;
-}
-.mainBody{
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-R4fxt49_dnv0ye5sP5CRmki6Z2BAwQJgw&s');
-  background-size: cover;
-  
 
 }
-.body{
-  background-color: black;
-}
-.card1{
-  width: 300px;
-  height: 290px;
-  
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  flex: 0 0 auto;
-  position: relative;
-  background-image: url('https://i.pinimg.com/736x/7f/ee/89/7fee89a8b13f2a7a17d36af55a847883.jpg');
-  background-size: cover;
-  
-   
-}
-.card2{
-  width: 200px;
-  height: 290px;
-  
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  flex: 0 0 auto;
-  position: relative;
-  background-image: url('https://i.pinimg.com/736x/7f/ee/89/7fee89a8b13f2a7a17d36af55a847883.jpg');
-  background-size: cover;
-  
-   
-}
-.card1 img {
+#item2 {
+  height: 345px;
   width: 100%;
-  height:250px;
-  object-fit: cover;
+
 }
-.card2 img {
-  width: 100%;
-  height:250px;
-  object-fit: cover;
-}
+ 
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }

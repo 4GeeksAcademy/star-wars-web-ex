@@ -5,19 +5,20 @@ import { Context } from '../store/appContext'
 const PlanetsCard = ({name , uid}) => {
     const {store , actions} = useContext(Context)
   return (
-    <div className="card1">
+    <div className="card">
       <div>
         <img
           src={`https://starwars-visualguide.com/assets/img/planets/${uid}.jpg`}
           alt={name}
         />
+          <div className="name"><p>{name}</p></div>
       </div>
       <figure>
         <div className='button'>
-          <button className='btn btn-sucess'>
-            <Link to={`/planetdetails/${uid}`}> {name}</Link>
+          <button className='btn btn-primary'>
+            <Link to={`/planetdetails/${uid}`}>More Info</Link>
           </button>
-          <button className='btn btn-dark' onClick={() => actions.addFav({ name: name, uid: uid })}>
+          <button className='btn btn-warning' onClick={() => actions.addFav({ name: name, uid: uid })}>
             fav
           </button>
         </div>

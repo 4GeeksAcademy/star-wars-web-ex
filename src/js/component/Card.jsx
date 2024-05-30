@@ -13,13 +13,14 @@ const Card = ({ name, uid }) => {
           src={`https://starwars-visualguide.com/assets/img/characters/${uid}.jpg`}
           alt={name}
         />
+        <div className="name"><p>{name}</p></div>
       </div>
       <figure>
         <div className="button">
-          <button>
-            <Link to={`/details/${uid}`}> {name}</Link>
+          <button className="btn btn-primary">
+            <Link to={`/details/${uid}`}> More info</Link>
           </button>
-          <button onClick={() => actions.addFav({ name: name, uid: uid })}>
+          <button className="btn btn-warning" onClick={() => actions.addFav({ name: name, uid: uid })}>
             fav
           </button>
         </div>

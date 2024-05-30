@@ -6,19 +6,20 @@ const StarshipCard = ({name , uid}) => {
     const {store , actions} = useContext(Context)
 
   return (
-    <div className="card2">
+    <div className="card">
       <div>
         <img
           src={`https://starwars-visualguide.com/assets/img/starships/${uid}.jpg`}
           alt={name}
         />
+          <div className="name"><p>{name}</p></div>
       </div>
       <figure>
         <div className='button'>
-          <button>
-            <Link to={`/starshipdetails/${uid}`}> {name}</Link>
+          <button className='btn btn-primary'>
+            <Link to={`/starshipdetails/${uid}`}>More Info</Link>
           </button>
-          <button onClick={() => actions.addFav({ name: name, uid: uid })}>
+          <button className='btn btn-warning' onClick={() => actions.addFav({ name: name, uid: uid })}>
             fav
           </button>
         </div>

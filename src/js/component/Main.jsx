@@ -10,18 +10,18 @@ const Main = ({ name, uid }) => {
   const [search, setSearch] = useState("");
   return (
     <div className="mainBody">
-      <div className="container-fluid cover">
+      <div id="item" className="container-fluid cover">
         {store.people?.map((el, i) => (
           <Card key={i} name={el.name} uid={el.uid} />
         ))}
       </div>
-      <div className="container-fluid cover">
+      <div id="item1" className="container-fluid cover">
         {store.planets?.map((ele, io) => (
           <PlanetsCard key={io} name={ele.name} uid={ele.uid} />
         ))}
 
       </div>
-      <div className="container-fluid cover">
+      <div id="item2" className="container-fluid cover">
         {store.starships?.map((eli, ie) => (
           <StarshipCard key={ie} name={eli.name} uid={eli.uid} />
         ))}
